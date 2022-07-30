@@ -13,7 +13,5 @@ export function splitIntoWords(sentense: string) {
         .map(w => w
             .replace("!", "")
             .replace(".", "")
-            .replace(",", "")
-        )
-
+            .replace(",", ""));
 }
