@@ -15,7 +15,7 @@ beforeEach(()=>{
 })
 
 
-test('', () => {
+test('test', () => {
 
     //действие
     const {age, lessons} = props;
@@ -29,7 +29,7 @@ test('', () => {
 
 })
 
-test('fgjjsj', () => {
+test('test2', () => {
 
     //действие
 
