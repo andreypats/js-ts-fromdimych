@@ -50,4 +50,27 @@ otherPromise.then (()=> {
 })
 // otherPromise выполнится(зарезолвится) только тогда, когда выполнятся оба переданных в него promise1 и promise2
 
-// 1:48:40
+//-----------------------------------------async-await------------------------------------------------------------------
+// await - функция ожидания, которая делает запрос без использования промисов, работает только внутри асинхронных функций (async)
+async function run() {
+    let user = await findUserInDB (1)
+    console.log(user.name)
+    let friend1 = await findUserInDB (1)
+    console.log(friend1.name)
+}
+run()
+
+//-----------------------------------------async-await-+-try-catch------------------------------------------------------
+async function run() {
+    let user = await findUserInDB (1)
+    console.log(user.name)
+    try {
+        //выполняется при положительном сценарии на запрос в await
+    }
+    catch {
+        //выполняется при отрицательном сценарии на запрос в await
+    }
+    let friend1 = await findUserInDB (1)
+    console.log(friend1.name)
+}
+run()
